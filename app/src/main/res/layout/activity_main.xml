@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        tools:context=".Pages.MainActivity">
+
+        <TextView
+            android:id="@+id/textViewChooseCase"
+            android:layout_width="291dp"
+            android:layout_height="107dp"
+            android:gravity="center"
+            android:text="@string/chooseCase"
+            android:textColor="?attr/colorSecondaryVariant"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Button
+            android:id="@+id/buttonFirstCase"
+            style="@style/myButton"
+            android:text="@string/firstCase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewChooseCase" />
+
+        <Button
+            android:id="@+id/buttonSecondCase"
+            style="@style/myButton"
+            android:text="@string/secondCase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFirstCase" />
+
+        <Button
+            android:id="@+id/buttonThirdCase"
+            style="@style/myButton"
+            android:text="@string/ThirdCase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSecondCase" />
+
+        <Button
+            android:id="@+id/buttonFourthCase"
+            style="@style/myButton"
+            android:text="@string/forthCase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonThirdCase" />
+
+        <Button
+            android:id="@+id/buttonFifthCase"
+            style="@style/myButton"
+            android:text="@string/fithCase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFourthCase" />
+
+        <Button
+            android:id="@+id/buttonSixthCase"
+            style="@style/myButton"
+            android:layout_marginBottom="16dp"
+            android:text="@string/sixthCase"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFifthCase" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

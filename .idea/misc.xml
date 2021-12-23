@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/drawable/btn_shape.xml" value="0.2703125" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/drawable/gradient_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/drawable/main_page_btns.xml" value="0.2703125" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_any_chart.xml" value="0.20471014492753623" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_chart.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_first_case_ddonek.xml" value="0.264" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_first_case_lambda_gt_mu.xml" value="0.30092592592592593" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_mm1.xml" value="0.264" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_mm1_k.xml" value="0.33163265306122447" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_mmc.xml" value="0.4" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_mmc_k.xml" value="0.264" />
+        <entry key="..\:/Users/Amr/AndroidStudioProjects/QueueingTheoryApp/app/src/main/res/layout/activity_second_case_lambda_lt_mu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

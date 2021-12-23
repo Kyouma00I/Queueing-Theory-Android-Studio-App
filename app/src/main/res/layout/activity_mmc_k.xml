@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        tools:context=".Pages.MainActivity">
+
+        <EditText
+            android:id="@+id/lambdaValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/lambdaValue"
+            app:layout_constraintEnd_toStartOf="@+id/muValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/muValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/muValue"
+            app:layout_constraintEnd_toStartOf="@+id/cValue"
+            app:layout_constraintStart_toEndOf="@+id/lambdaValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/cValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/cValue"
+            app:layout_constraintEnd_toStartOf="@+id/kValue"
+            app:layout_constraintStart_toEndOf="@+id/muValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/kValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/kValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_shape"
+            android:text="@string/sumCaseOne"
+            android:textColor="?attr/colorOnSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/muValue" />
+
+        <TextView
+            android:id="@+id/lValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="8dp"
+            android:text="L = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lpic" />
+
+        <ImageView
+            android:id="@+id/lqpic"
+            android:layout_width="344dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSum3"
+            app:srcCompat="@drawable/lqmmck" />
+
+        <ImageView
+            android:id="@+id/lpic"
+            android:layout_width="222dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lqValue"
+            app:srcCompat="@drawable/lmmck" />
+
+        <TextView
+            android:id="@+id/lqValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="8dp"
+            android:text="Lq = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lqpic" />
+
+        <ImageView
+            android:id="@+id/wpic"
+            android:layout_width="128dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lValue"
+            app:srcCompat="@drawable/wmmck" />
+
+        <TextView
+            android:id="@+id/wValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="8dp"
+            android:text="W = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wpic" />
+
+        <ImageView
+            android:id="@+id/wqpic"
+            android:layout_width="104dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wValue"
+            app:srcCompat="@drawable/wqmmck" />
+
+        <TextView
+            android:id="@+id/wqValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="8dp"
+            android:text="Wq = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wqpic" />
+
+        <ImageView
+            android:id="@+id/p0pic"
+            android:layout_width="317dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pnValue"
+            app:srcCompat="@drawable/p0mmck" />
+
+
+        <ImageView
+            android:id="@+id/pnpic"
+            android:layout_width="298dp"
+            android:layout_height="139dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wqValue"
+            app:srcCompat="@drawable/pn2mmck" />
+
+        <TextView
+            android:id="@+id/pnValue"
+            style="@style/answerTextColor"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:text="P(n) = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nValue"
+            app:layout_constraintTop_toBottomOf="@+id/pnpic" />
+
+        <EditText
+            android:id="@+id/nValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:hint="@string/nValue"
+            app:layout_constraintEnd_toStartOf="@+id/pnValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pnpic" />
+
+        <TextView
+            android:id="@+id/p0Value"
+            style="@style/answerTextColor"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/p0valuemmc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p0pic" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

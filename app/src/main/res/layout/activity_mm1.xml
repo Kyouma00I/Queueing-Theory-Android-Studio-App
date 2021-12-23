@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        tools:context=".Pages.MainActivity">
+
+        <EditText
+            android:id="@+id/lambdaValue3"
+            style="@style/InputStyle"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/lambdaValue"
+            app:layout_constraintEnd_toStartOf="@+id/muValue3"
+            app:layout_constraintHorizontal_bias="0.624"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/muValue3"
+            style="@style/InputStyle"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="75dp"
+            android:ems="10"
+            android:hint="@string/muValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lambdaValue3"
+            app:layout_constraintTop_toTopOf="@+id/lambdaValue3" />
+
+        <Button
+            android:id="@+id/buttonSum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_shape"
+            android:text="@string/sumCaseOne"
+            android:textColor="?attr/colorOnSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/muValue3" />
+
+        <TextView
+            android:id="@+id/lEqation"
+            style="@style/mainTextMe"
+            android:layout_marginTop="40dp"
+            android:text="@string/lEquation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSum3" />
+
+        <TextView
+            android:id="@+id/lqEquation"
+            style="@style/mainTextMe"
+            android:layout_marginTop="40dp"
+            android:text="@string/lqEquation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lEqation" />
+
+        <TextView
+            android:id="@+id/wEquation"
+            style="@style/mainTextMe"
+            android:layout_marginTop="40dp"
+            android:text="@string/wEquation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lqEquation" />
+
+        <TextView
+            android:id="@+id/wqEquation"
+            style="@style/mainTextMe"
+            android:layout_marginTop="40dp"
+            android:text="@string/wqEquation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wEquation" />
+
+        <TextView
+            android:id="@+id/lValue"
+            style="@style/answerTextColor"
+            android:text="L = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintStart_toEndOf="@+id/lEqation"
+            app:layout_constraintTop_toTopOf="@+id/lEqation" />
+
+        <TextView
+            android:id="@+id/lqValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="40dp"
+            android:text="Lq = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toEndOf="@+id/lqEquation"
+            app:layout_constraintTop_toBottomOf="@+id/lValue" />
+
+        <TextView
+            android:id="@+id/wValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="40dp"
+            android:text="W = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.776"
+            app:layout_constraintStart_toEndOf="@+id/wEquation"
+            app:layout_constraintTop_toBottomOf="@+id/lqValue" />
+
+        <TextView
+            android:id="@+id/wqValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="40dp"
+            android:text="Wq = ??"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toEndOf="@+id/wqEquation"
+            app:layout_constraintTop_toBottomOf="@+id/wValue" />
+
+        <TextView
+            android:id="@+id/pnText"
+            style="@style/mainTextMe"
+            android:layout_marginTop="40dp"
+            android:text="P(n)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.301"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wqEquation" />
+
+        <EditText
+            android:id="@+id/nValue"
+            style="@style/InputStyle"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="@string/nValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.171"
+            app:layout_constraintStart_toEndOf="@+id/pnText"
+            app:layout_constraintTop_toBottomOf="@+id/wqValue" />
+
+        <TextView
+            android:id="@+id/pnValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="P(n) = ??"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pnText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

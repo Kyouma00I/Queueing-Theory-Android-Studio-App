@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Queueing Theory App</string>
+    <string name="chooseCase">Choose your Queueing System (in Kendall Notation)</string>
+    <string name="firstCase"><![CDATA[[1/λ < 1/μ] D/D/1/(k-1)]]></string>
+    <string name="lambdaValue">λ=....</string>
+    <string name="muValue">μ=....</string>
+    <string name="kValue">K=....</string>
+    <string name="tiValue">ti =??</string>
+    <string name="sumCaseOne">Calculate</string>
+    <string name="tiEquation">K = [λ*ti] - [μ*ti - μ/λ]</string>
+    <string name="tLTCaseOne"><![CDATA[For t < 1/λ or t < ??]]></string>
+    <string name="nOftCaseOne">n(t) = 0</string>
+    <string name="tBetweenCaseOne"><![CDATA[For 1/λ <= t < ti or ?? <= t < ??]]></string>
+    <string name="nOfBetweenCaseOne">n(t) = ??</string>
+    <string name="tValue">t=.... (if given)</string>
+    <string name="tGTtiCaseOne">For t >= ti or t >= ??</string>
+    <string name="nOftGTCaseOne">n(t) = ??</string>
+    <string name="nEqualZeroCaseOne">For n = 0</string>
+    <string name="wqOfnZeroCaseOne">Wq(0) = 0</string>
+    <string name="nLTBalkCaseOne"><![CDATA[For n < λti or n < ??]]></string>
+    <string name="wqOfnLTBalkCaseOne">Wq(n) = ??</string>
+    <string name="nGTBalkCaseOne"><![CDATA[For n >= λti or n >= ??]]></string>
+    <string name="wqOfnGTBalkCaseOne">Wq(n) = ??</string>
+    <string name="secondCase"><![CDATA[[1/λ >= 1/μ]   D/D/1/(k-1)]]></string>
+    <string name="mValue">M=....</string>
+    <string name="mEquation">M = [μ*ti]-[λ*ti]</string>
+    <string name="tLTtiCaseTwo"><![CDATA[For t < ti or t < ??]]></string>
+    <string name="nOftGTCaseTwo">n(t) = 0 or 1</string>
+    <string name="wqOfnAtZeroCaseTwo">Wq(0) = (M-1)/2μ</string>
+    <string name="nOftLTBalckCase2">Wq(n) = (M-1+n)(1/μ) - n(1/λ)</string>
+    <string name="ThirdCase">M/M/1</string>
+    <string name="lEquation">L = λ / (μ - λ)</string>
+    <string name="lqEquation">Lq = λ^2 / μ(λ - μ)</string>
+    <string name="wEquation">W = 1 / (μ - λ)</string>
+    <string name="wqEquation">Wq = λ / μ(μ - λ)</string>
+    <string name="nValue">n=....</string>
+    <string name="forthCase">M/M/1/K</string>
+    <string name="fithCase">M/M/c</string>
+    <string name="cValue">c=....</string>
+    <string name="getChart">Get Chart</string>
+    <string name="p0valuemmc">P(0) = ???</string>
+    <string name="ciValue">Ci = ??</string>
+    <string name="sixthCase">M/M/c/K</string>
+
+</resources>

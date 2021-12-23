@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        tools:context=".Pages.SecondCase_Lambda_LT_Mu">
+
+        <EditText
+            android:id="@+id/mValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/mValue"
+            app:layout_constraintEnd_toStartOf="@+id/lambdaValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/lambdaValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/lambdaValue"
+            app:layout_constraintEnd_toStartOf="@+id/muValue"
+            app:layout_constraintStart_toEndOf="@+id/mValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/muValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/muValue"
+            app:layout_constraintEnd_toStartOf="@+id/kValue"
+            app:layout_constraintStart_toEndOf="@+id/lambdaValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/kValue"
+            style="@style/InputStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/kValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/muValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/btn_shape"
+            android:text="@string/sumCaseOne"
+            android:textColor="?attr/colorOnSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/muValue" />
+
+        <Button
+            android:id="@+id/getChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_shape"
+            android:text="@string/getChart"
+            android:textColor="?attr/colorOnSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSum2" />
+
+        <TextView
+            android:id="@+id/mEquation"
+            style="@style/mainTextMe"
+            android:layout_marginTop="16dp"
+            android:text="@string/mEquation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getChart" />
+
+        <TextView
+            android:id="@+id/tiValue"
+            style="@style/answerTextColor"
+            android:layout_marginTop="16dp"
+            android:text="@string/tiValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toEndOf="@+id/mEquation"
+            app:layout_constraintTop_toBottomOf="@+id/getChart" />
+
+        <TextView
+            android:id="@+id/tLTtiCaseTwo"
+            style="@style/mainTextMe"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/tLTtiCaseTwo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tValue" />
+
+        <TextView
+            android:id="@+id/nOftLTCaseTwo"
+            style="@style/answerTextColor"
+            android:layout_marginTop="12dp"
+            android:text="@string/nOfBetweenCaseOne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintStart_toEndOf="@+id/tLTtiCaseTwo"
+            app:layout_constraintTop_toBottomOf="@+id/tValue" />
+
+        <TextView
+            android:id="@+id/tGTtiCaseOne"
+            style="@style/mainTextMe"
+            android:layout_marginTop="40dp"
+            android:text="@string/tGTtiCaseOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tLTtiCaseTwo" />
+
+        <TextView
+            android:id="@+id/nOftGTCaseTwo"
+            style="@style/answerTextColor"
+            android:layout_marginTop="40dp"
+            android:text="@string/nOftGTCaseTwo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.898"
+            app:layout_constraintStart_toEndOf="@+id/tGTtiCaseOne"
+            app:layout_constraintTop_toBottomOf="@+id/nOftLTCaseTwo" />
+
+        <TextView
+            android:id="@+id/nEqualZeroCaseOne"
+            style="@style/mainTextMe"
+            android:layout_marginTop="40dp"
+            android:text="@string/nEqualZeroCaseOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tGTtiCaseOne" />
+
+        <TextView
+            android:id="@+id/wqOfnAtZeroCaseTwo"
+            style="@style/answerTextColor"
+            android:layout_marginTop="40dp"
+            android:text="@string/wqOfnAtZeroCaseTwo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toEndOf="@+id/nEqualZeroCaseOne"
+            app:layout_constraintTop_toBottomOf="@+id/nOftGTCaseTwo" />
+
+        <TextView
+            android:id="@+id/nLTBalkCaseOne"
+            style="@style/mainTextMe"
+            android:layout_marginTop="40dp"
+            android:text="@string/nLTBalkCaseOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nEqualZeroCaseOne" />
+
+        <TextView
+            android:id="@+id/nOftLTBalckCase2"
+            style="@style/answerTextColor"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/nOftLTBalckCase2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/nLTBalkCaseOne"
+            app:layout_constraintTop_toBottomOf="@+id/wqOfnAtZeroCaseTwo" />
+
+        <TextView
+            android:id="@+id/nGTBalkCaseOne"
+            style="@style/mainTextMe"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/nGTBalkCaseOne"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nOftLTBalckCase2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/wqOfnZeroCaseOne"
+            style="@style/answerTextColor"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/wqOfnZeroCaseOne"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toEndOf="@+id/nGTBalkCaseOne"
+            app:layout_constraintTop_toBottomOf="@+id/nOftLTBalckCase2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/tValue"
+            style="@style/InputStyle"
+            android:layout_width="120dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:hint="@string/tValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getChart" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
